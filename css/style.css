@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  color: white;
+  background-color: black;
+}
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  background-color: yellow;
+  overflow-y: auto;
+}
+#js_logo {
+  text-align: center;
+  color: black;
+}
+.fa-js-square {
+  font-size: 5em;
+  display: inline-block;
+  width: 100%;
+  color: black;
+}
+#navbar ul {
+  background-color: yellow;
+  /* border-bottom: 1px solid black; */
+  border-top: 2px solid black;
+  list-style: none;
+  text-align: center;
+}
+#navbar ul li {
+  text-align: left;
+  height: 3rem;
+  margin-top: 0.625rem;
+  text-align: center;
+}
+#navbar ul a {
+  padding: 0.625rem;
+  text-decoration: none;
+  color: black;
+  height: 1.5rem;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  padding: 2rem;
+  max-width: 960px;
+}
+header {
+  margin: 10px;
+  font-size: 1.8em;
+  margin: 0.625rem;
+  font-weight: 800;
+}
+p {
+  margin-bottom: 0.625rem;
+  text-align: justify;
+}
+code {
+  background-color: #eee;
+  color: black;
+  padding: 0.5rem;
+}
+.main-section li {
+  margin-left: 2.5rem;
+}
+
+@media (max-width: 815px) {
+  #navbar ul {
+    height: 3.2rem;
+  }
+
+  .fa-js-square {
+    font-size: 3em;
+  }
+  #navbar {
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 18.75rem;
+    z-index: 1;
+    border-bottom: 2px solid black;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 16.875rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #main-doc {
+    margin-left: -0.625px;
+  }
+}
